@@ -1,10 +1,11 @@
 const translate = require("translate-google");
 const express = require("express")
+const path = require("path")
 
 const app = express()
 
 app.get("/", (req, res) => {
-    res.redirect("https://whyetzz.my.id")
+    res.sendFile(path.resolve("acumalaka.html"))
 })
 
 app.get("/translate/:lang/:input", async(req, res)=> {
