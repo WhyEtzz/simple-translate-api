@@ -5,7 +5,7 @@ const path = require("path")
 const app = express()
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("acumalaka.html"))
+    res.sendFile(path.resolve("kodok-acumalaka.gif"))
 })
 
 app.get("/translate/:lang/:input", async(req, res)=> {
